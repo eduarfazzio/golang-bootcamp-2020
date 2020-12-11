@@ -1,4 +1,4 @@
-package ReadCSV
+package reader
 
 import (
 	//"bufio"
@@ -9,9 +9,9 @@ import (
 	"os"
 )
 
-func ReadCSV() {
+func reader() {
 	// Open the file
-	csvfile, err := os.Open("github/golang-bootcamp-2020/Files")
+	csvfile, err := os.Open("../Files/input.csv")
 	if err != nil {
 		log.Fatalln("Couldn't open the csv file", err)
 	}

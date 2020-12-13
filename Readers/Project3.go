@@ -1,4 +1,4 @@
-package reader
+package readers
 
 import (
 	//"bufio"
@@ -9,9 +9,9 @@ import (
 	"os"
 )
 
-func reader() {
+func Readerfunc() {
 	// Open the file
-	csvfile, err := os.Open("../Files/input.csv")
+	csvfile, err := os.Open("Files/input.csv")
 	if err != nil {
 		log.Fatalln("Couldn't open the csv file", err)
 	}
